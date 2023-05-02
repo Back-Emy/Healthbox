@@ -134,22 +134,31 @@ menu{
     margin-top: 1px;
 }
 .img-principal{
-    margin-top: 50px;
-    margin-left: 70px;
+    margin: 5px;
 }
 .img-bloco1{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 5px;
 }
 .img-bloco2{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 5px;
 }
 .img-bloco3{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 5px;
 }
 .img-bloco4{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 5px;
+}
+.fundou{
+ display: flex;
+ position: auto;
+}
+.text{
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(3, 21, 6); 
+    text-decoration: none;"
+    font-weight: 400;
+    font-size: 45.1524px;
+}
+.text2{
+    
 }
