@@ -73,8 +73,8 @@ menu{
     width: 100%;
     background-color:#7C9E82;
     height: 45px;
-    margin-top: 11px;
     position: fixed;  
+    top: 8.5vh;
 }
 
 
@@ -133,32 +133,25 @@ menu{
     margin-left: 2vh;
     margin-top: 1px;
 }
-.img-principal{
-    margin: 5px;
-}
-.img-bloco1{
-    margin: 5px;
-}
-.img-bloco2{
-    margin: 5px;
-}
-.img-bloco3{
-    margin: 5px;
-}
-.img-bloco4{
-    margin: 5px;
-}
+
 .fundou{
- display: flex;
- position: auto;
+    display: flex;
+    margin-top: 22vh;
+    margin-left: 4vw;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+}
+.main{
+    display: flex;
+    margin-left: 4vw;
 }
 .text{
-    font-family: 'Fira Sans', sans-serif;
-    color: rgb(3, 21, 6); 
-    text-decoration: none;"
+    font-family:'Fira Sans', sans-serif;
+    font-size: 45px;
     font-weight: 400;
-    font-size: 45.1524px;
-}
-.text2{
-    
+    line-height: 63px;
 }
