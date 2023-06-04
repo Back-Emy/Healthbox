@@ -1,0 +1,44 @@
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #D7DBD9;
+}
+        
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #0A250D;
+    color: #FFF;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+
+}
+.espaço-icone{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+.text1{
+    font-size: 15px;
+    background-color: rgba(137, 43, 226, 0.26);
+    display: flex;
+}
+.text2{
+    font-size: 15px;
+    background-color: rgba(220, 20, 60, 0.452);
+    display: flex;
+}
+.text3{
+    font-size: 15px;
+    background-color: rgba(20, 220, 103, 0.452);
+    display: flex;
+}
+.text4{
+    font-size: 15px;
+    background-color: rgba(220, 100, 20, 0.452);
+    display: flex;
+}
