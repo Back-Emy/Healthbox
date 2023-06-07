@@ -1,68 +1,211 @@
 body {
-    min-height: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
     background-color: #D7DBD9;
+    background-image: url(/Tela.Login/healthbox-1__7_-removebg-preview.png);
+    background-size: auto;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #0A250D;
-    color: #FFF;
+body *{
+    box-sizing: border-box;
+}
+
+/* Quadro fundo */
+
+.espaço{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esp{
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-fundo{
+    width: 60%;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    background-color: #316B3B;
+    border-radius: 3%;
+    box-shadow: 0px 10px 40px #163D18;
+}
+
+/* Entrada de dados  */
+
+.espaço-tex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
-/* .grito{
-    /
-} */
-.espaço-icone > img{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.205);
-    margin: 5px;
+.espaço-tex > input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
 }
-.espaço-text1{
-    font-size: 17px;
-    background-color: rgba(137, 43, 226, 0.26);
-    display: flex;
-    flex-direction: column;
-    line-height: 20px;
-}
-.espaço-text2{
-    font-size: 17px;
-    background-color: rgba(220, 20, 60, 0.452);
-    display: flex;
-    flex-direction: column;
-}
-.espaço-text3{
-    font-size: 17px;
-    background-color: rgba(20, 220, 103, 0.452);
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
 
+.espaço-tex > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
 }
-.espaço-text4{
-    font-size: 17px;
-    background-color: rgba(220, 100, 20, 0.658);
+
+.espaço-tex > input::placeholder{
+    color: #163d18be ;
+}
+
+.espaço-tex > input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
+}
+
+.espaço-tex > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+
+.espaço-tex > input::placeholder{
+    color: #163d18be ;
+}
+
+/* Lado lado */
+
+.espaço-tex-duplo{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.espaço-tex-01 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 45%;
+}
+
+.espaço-tex-01 > input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
+}
+.espaço-tex-01 > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+.espaço-tex-01 > input::placeholder{
+    color: #163d18be ;
+}
+.espaço-tex-01 > input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
+}
+.espaço-tex-01 > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+.espaço-tex-01 > input::placeholder{
+    color: #163d18be ;
+}
+.Tell{
+    height: 5vh;
+}
+
+
+/* Termos  */
+
+.termos_de_uso{
+    margin-top:10px ;
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    font-size: 9pt;
     text-align: center;
 }
-.subtext{
-    margin: 10px;
+.termos_link_link_uso{
+    color: rgb(255, 255, 255);
 }
-.icone-espaço-texto4{
-    flex-direction: column;
-    display: flex;
-    text-align: center;
+.termos_link_link_uso{
+    color: rgb(255, 255, 255);
+}
 
-}
-.icone-espaço-texto4 > img{
+/* botão */
+
+.btn-login{
+    background-color: #85A062;
     width: 50%;
-    margin: auto;
-    margin-bottom: 5px;
-    justify-content: space-around;
+    border-radius: 8px;
+    padding: 10px 0px;
+    margin-top: 15px;
+    border: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+/* Fazer login */
+
+.registro2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 5%;
+    margin-top: 9px;
+}
+.registro2>p{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    text-align: center;
+    font-weight: bold;
+}
+.fazer_cadastro{
+    color: rgb(255, 255, 255);
 }
