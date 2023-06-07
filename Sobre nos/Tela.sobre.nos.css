@@ -168,10 +168,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .esp-logo{
-    width:  50vw;
+    width:  48vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -229,7 +230,7 @@ header {
         height: auto;
     }
     .logo.grande{
-        width: 50vw;
+        width: 47vw;
     }
     .Bloco-texto{
         width: 80%;
