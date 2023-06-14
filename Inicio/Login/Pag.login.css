@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D7DBD9;
-    background-image: url(/Inicio/Login/fundo-fruta.png);
+    background-image: url(fundo-fruta.png);
     background-size: auto;
 }
 body *{

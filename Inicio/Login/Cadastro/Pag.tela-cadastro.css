@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D7DBD9;
-    background-image: url(/Cadastro/healthbox-1__7_-removebg-preview.png);
+    background-image: url(fundo-fruta.png);
     background-size: auto;
 }
 body *{
@@ -114,6 +114,8 @@ body *{
 }
 
 .espaço-tex-01 > input{
+    height: 33px;
+    color: #163d18be;
     width: 100%;
     border: none;
     border-radius: 8px;

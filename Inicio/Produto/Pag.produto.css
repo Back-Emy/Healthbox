@@ -2,18 +2,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D7DBD9;
-    background-image: url(./fundo-fruta.png);
-    background-size: auto;
 }
-body *{
-    box-sizing: border-box;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* menu principal */
+
 .menu01{
     position: fixed;
     top: 0;
@@ -28,9 +25,10 @@ header {
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .logo {
     text-transform: uppercase;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 /* caixa de pesquisa */
@@ -59,11 +57,13 @@ header {
     cursor: pointer;
     position: fixed;
 }
+
 .search-and-login {
     display: flex;
     align-items: center;
     text-transform: uppercase;
 }
+
 /* Entrar e sacola */
 
 .entrar-sacola {
@@ -73,6 +73,7 @@ header {
     height: 20px;
     width: 170px ;
 }
+
 /* entrar */
 
 .Tex-entrar{
@@ -115,10 +116,10 @@ header {
     text-transform: uppercase;
     position: fixed;
     font-family: 'Fira Sans', sans-serif;
+
 } 
 
-
-/* menu 02 */
+/* menu02  */
 
 .menu02{
     position: fixed;
@@ -131,113 +132,32 @@ header {
     flex-direction:row-reverse;
     display: flex;
 }
+
 .Esp-menu-02{
-    text-transform: uppercase;
-    height: 29px;
-    width: 280px ;
-    margin-right:3vw; 
-    display: flex;
-    align-items: center;     
-    justify-content: space-around;   
+        text-transform: uppercase;
+        height: 20px;
+        width: 280px ;
+        margin-right:3vw; 
+        display: flex;
+        align-items: center;     
+        justify-content: space-around;   
 }
 
-.produto{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-}
-.sobre-nos{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-}
-.contato{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* espaço fundo  */
-
-.esp-fundo{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.esp-logo{
-    width:  48vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-
-.esp-text{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-
-.Bloco-texto{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px 35px;
-    background-color: #7C9E82;
-    border-radius: 3%;
-    box-shadow: 0px 10px 40px #00000056;
-    
-}
-
-.Bloco-texto > h1{
-    color: white;
-    font-family:'Antic Didone', serif; 
-    font-size: 4vh;
-    
-}
-.Bloco-texto > p{
-    color: white;
-    font-family: "Fira Sans";
-    font-size: 2.2vh;
-}
-
-@media screen and (max-width: 1220px) { 
-    .Bloco-texto{
-        width: 85%;
+    .produto{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
     }
-}
-
-@media screen and (max-width: 870px) { 
-    .esp-fundo{
-        justify-content: center;
-        flex-direction: column;
+	.sobre-nos{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
     }
-    .esp-logo{
-        margin-top: 60vh;
+	.contato{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
     }
-    .esp-text{
-        width: 100%;
-        height: auto;
-    }
-    .logo.grande{
-        width: 47vw;
-    }
-    .Bloco-texto{
-        width: 80%;
-    }
-}
-
-
-/* rodape */
-
