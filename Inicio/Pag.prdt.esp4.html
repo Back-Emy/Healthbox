@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>Pag. prdt-especifico</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
-    <link rel="icon" href="Hb (2).png" type="image/png">
-    <link rel="stylesheet" href="Pag.prdt.esp4.css">
+    <meta charset=UTF-8>
+	<!-- Linkagem -->
+	<title>Pag.prdt-especifico-04</title>
+	<!-- Titulo -->
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+	<!-- Fonte -->
+    <meta name="viewport" content="width=device-width">
+    <!-- media -->
+	<link rel="stylesheet" href="Pag.prdt.esp4.css">
+	<!-- CSS -->
+    <link rel="icon" href="Hb.png" type="image/png">
+    <!--Imagem icon-->
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> 
 </head>
 
 <body>
@@ -51,7 +62,14 @@
                     style="width: 105px; margin-bottom: 5px;"></div>
         </div>
         <div class="main">
-            <div class="img-principal"><img src="box4.png" alt="box6" style="width: 563px;"></div>
+            <div class="img-principal"><img src="box4.png" alt="box4" style="width: 563px;">
+                <div class="text7">Comentários</div>
+                <input class="caixa-com" type="text" placeholder="Comentários...">
+                </input>
+                <input class="caixa-com" type="text" placeholder="Comentários...">
+                </input>
+            </div>
+        </div>
             <div class="text">Box Salad
                 <div class="text2">Box de mix de saladas</div>
                 <div class="text3">R$ 50,90</div>
@@ -70,21 +88,66 @@
                     <label for="cm_star-5"><i class="fa"></i></label>
                     <input type="radio" id="cm_star-5" name="fb" value="5" />
                 </div>
-                <div class="text4">Consulte o prazo de entrega</div>
-                <div class="cep">
-                    <div class="button2">
-                        <form>
-                            <input type="text" name="CEP" id="CEP" placeholder="Digite o CEP" />
-                            <input type="button" value="Ok" id="btnCEP">
-                        </form>
+                <div>
+                    <div class="text5">Ingredientes</div>
+                    <div class="bloco5">
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Cenoura</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Beterraba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Cheiro-verde</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Pimentão Vermelho</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Rúcula</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Alface Americana</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Cebola Roxa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conectado" class="flag">
+                            <label for="conectado" class="esqueci-senha">Tomate-cereja</label>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <div class="text5">Algo para adicionar?</div>
+                    <input class="caixa" type="text" placeholder="Ex: tirar cereja, adicionar maionese etc...">
+                    </input>
 
+                </div>
+
+            <div class="text4">Consulte o prazo de entrega</div>
+            <div class="cep">
                 <div class="button2">
-                    <input type="submit" value="ADICIONAR À SACOLA" id="Adicionar à sacola" class="botao-adicionar">
+                    <form>
+                        <input type="text" name="CEP" id="CEP" placeholder="Digite o CEP" />
+                        <input type="button" value="Ok" id="btnCEP">
+                    </form>
                 </div>
             </div>
+
+            <div class="button2">
+                <input type="submit" value="ADICIONAR À SACOLA" id="Adicionar à sacola" class="botao-adicionar">
+            </div>
         </div>
+    </div>            
+</div>
         </header>
 </body>
 

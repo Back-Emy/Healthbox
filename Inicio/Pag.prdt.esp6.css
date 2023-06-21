@@ -3,6 +3,9 @@ body {
     padding: 0;
     background-color: #D7DBD9;
 }
+body *{
+    box-sizing: border-box;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -185,7 +188,7 @@ header {
     font-size: 45px;
     font-weight: 400;
     font-weight: bold;
-    line-height: 73px;
+    line-height: 65px;
     margin-left: 55px;
 }
 .text2{
@@ -193,6 +196,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
+    margin-bottom: 3px;
 }
 .text3{
     font-family:'Fira Sans', sans-serif;
@@ -216,11 +220,55 @@ header {
 .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #316B3B;
 }
-.text4{
+.text5{
     font-family:'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    font-weight: bold;
+    height: 45px;
+}
+.text7{
+    font-family:'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.caixa-com{
+    background-color: #889D71;
+    color: #fff;
+    margin: 10px;
+    line-height: 55px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    width: 96%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.caixa{
+    background-color: #889D71;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bloco5{
+    font-family:'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    column-count: 2;
+}
+.text4{
+    font-family:'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 4px;
+    
 }
 .cep input {
     background-color: #889D71;
@@ -258,7 +306,7 @@ header {
     height: 45px;
     border: none;
     padding: 4px;
-    width: 80%;
+    width: 100%;
     color: #fff;
     font-size: 22px;
     font-weight: bold;
