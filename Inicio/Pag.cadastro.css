@@ -9,6 +9,8 @@ body *{
     box-sizing: border-box;
 }
 
+/* Quadro fundo */
+
 .espaço{
     width: 100vw;
     height: 100vh;
@@ -38,6 +40,8 @@ body *{
     border-radius: 3%;
     box-shadow: 0px 10px 40px #163D18;
 }
+
+/* Entrada de dados  */
 
 .espaço-tex {
     display: flex;
@@ -70,59 +74,95 @@ body *{
     color: #163d18be ;
 }
 
-.Op{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 95%;
-    height: 4%;
-    font-size: 13px;
-    color: #D7DBD9 ;
-    margin-top: 2px;
-    margin-bottom: 4px;
-    overflow: hidden;
-}
-
-.desenho{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.espaço-tex > input{
     width: 100%;
-    height: 6%;
-    margin-bottom: 4px;
-}
-.bloquinho-direita{
-    background-color: #D7DBD9;
-    width: 40%;
-    height: 8%;
-}
-.bloquinho-esquerda{
-    background-color: #D7DBD9;
-    width: 40%;
-    height: 8%;
-}
-.desenho > p{
-    font-size: 20px;
-    color: #D7DBD9;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
 }
 
-
-.redes{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 95%;
-    height: 5%;
-    margin-top: 9px;
-}
-.redes > p{
+.espaço-tex > label{
     font-family: 'Fira Sans', sans-serif;
     color: #D7DBD9;
-    margin-bottom: 5px;
-    font-weight: bold;
-    margin-bottom: 19px;
+    margin-bottom: 9px;
+    font-weight: bold
 }
 
+.espaço-tex > input::placeholder{
+    color: #163d18be ;
+}
+
+/* Lado lado */
+
+.espaço-tex-duplo{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.espaço-tex-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 45%;
+}
+
+.espaço-tex-01 > input{
+    height: 33px;
+    color: #163d18be;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
+}
+.espaço-tex-01 > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+.espaço-tex-01 > input::placeholder{
+    color: #163d18be ;
+}
+.espaço-tex-01 > input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background: #D7DBD9;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #163d18be ;
+    margin-bottom: 10px;
+}
+.espaço-tex-01 > label{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D7DBD9;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+.espaço-tex-01 > input::placeholder{
+    color: #163d18be ;
+}
+.Tell{
+    height: 5vh;
+}
+
+
+/* Termos  */
 
 .termos_de_uso{
     margin-top:10px ;
@@ -137,6 +177,9 @@ body *{
 .termos_link_link_uso{
     color: rgb(255, 255, 255);
 }
+
+/* botão */
+
 .btn-login{
     text-decoration: none;
     color: #D7DBD9;
@@ -144,12 +187,15 @@ body *{
     width: 50%;
     border-radius: 8px;
     padding: 10px 0px;
-    margin-top: 38px;
+    margin-top: 15px;
     border: none;
     font-family: 'Fira Sans', sans-serif;
     font-size: 20pt;
     font-weight: bold;
 }
+
+/* Fazer login */
+
 .registro2{
     display: flex;
     justify-content: center;
@@ -167,5 +213,3 @@ body *{
 .fazer_cadastro{
     color: rgb(255, 255, 255);
 }
-    
-
