@@ -178,10 +178,10 @@ header {
     width: 45vw;
 }
 .img-fundo{
-    margin-top: -8vh;
-    margin-right: -2vw;
-    width: 91vh;
-    height: 116vh;
+    margin-top: 8px;
+    margin-left: -12px;
+    width: 95vh;
+    height: 96vh;
     align-items: center;  
     background-repeat: no-repeat;
     text-transform: uppercase;

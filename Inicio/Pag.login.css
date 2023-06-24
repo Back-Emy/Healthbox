@@ -168,4 +168,45 @@ body *{
     color: rgb(255, 255, 255);
 }
     
+ /* responsivo */
 
+@media screen and (max-width:1300px) {
+    .espaço{
+        width: 100%;
+    }
+    .login-esp{
+        width: 94%;
+    }
+    .texto-fundo{
+        width: 54%;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    .espaço{
+        width: 100%;
+    }
+    .login-esp{
+        width: 94%;
+    }
+    .texto-fundo{
+        width: 84%;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .espaço{
+        width: 100%;
+    }
+    .login-esp{
+        width: 94%;
+    }
+    .texto-fundo{
+        width: 94%;
+    }
+
+}
