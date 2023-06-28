@@ -314,6 +314,13 @@
             cursor: pointer;
         }
 
+
+        /* sombra.baixo.menu  */
+
+        nav.scroll {
+            box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
+
+        }
         /* responsivo */
 
         @media screen and (max-width:600px) {
@@ -323,7 +330,6 @@
                 margin-right: 5%;
                 line-height: 27px;
             }
-
         }
     </style>
 
@@ -483,6 +489,21 @@
         <button>Carregar mais produtos</button>
     </div>
 
+    <script>
+        function adicionarClasse() {
+
+            window.addEventListener('scroll', () => {
+                const navigator = document.querySelector('nav.menu02');
+
+                // console.log(navigator);
+
+                const alturaPagina = window.scrollY;
+                if (alturaPagina < 10) navigator.classList.remove('scroll');
+                else navigator.classList.add('scroll');
+            });
+        }
+        adicionarClasse()
+    </script>
 </body>
 
 </html>

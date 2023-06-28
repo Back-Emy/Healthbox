@@ -156,13 +156,12 @@
 
         .Esp-menu-02 {
             text-transform: uppercase;
-            height: 20px;
+            height: 29px;
             width: 280px;
             margin-right: 3vw;
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-top: 3px;
         }
 
         .produto {
@@ -459,7 +458,7 @@
             window.addEventListener('scroll', () => {
                 const navigator = document.querySelector('nav.menu02');
 
-                console.log(navigator);
+                // console.log(navigator);
 
                 const alturaPagina = window.scrollY;
                 if (alturaPagina < 10) navigator.classList.remove('scroll');
