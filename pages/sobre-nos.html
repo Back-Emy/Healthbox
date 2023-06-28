@@ -385,6 +385,12 @@
             margin-bottom: 5px;
             justify-content: space-around;
         }
+
+        /* sobra  */
+        nav.scroll {
+            box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
+
+        }
     </style>
 
 
@@ -412,14 +418,14 @@
                 </div>
             </div>
         </header>
-        <header class="menu02">
+        <nav class="menu02">
             <div class="Esp-menu-02">
                 <a class="produto" href="produtos.html">Produto</a>
                 <a class="sobre-nos" href="sobre-nos.html">Sobre Nós</a>
                 <a class="contato"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdoOyhzeBr3NFZyq5oc7SJYBKwEpzIQ6TAfeUqSWrKmRCHPbA/viewform">Contato</a>
             </div>
-        </header>
+        </nav>
 
         <main class="esp-fundo">
             <div class="esp-logo">
@@ -501,6 +507,22 @@
             </div>    
         </div>
     </footer>
+
+    <script>
+        function adicionarClasse() {
+
+            window.addEventListener('scroll', () => {
+                const navigator = document.querySelector('nav.menu02');
+
+                console.log(navigator);
+
+                const alturaPagina = window.scrollY;
+                if (alturaPagina < 10) navigator.classList.remove('scroll');
+                else navigator.classList.add('scroll');
+            });
+        }
+        adicionarClasse()
+    </script>
 </body>
 
 </html>
