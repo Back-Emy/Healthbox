@@ -4,13 +4,15 @@
 <head>
     <meta charset=UTF-8>
     <!-- Linkagem -->
-    <title>Pag.prdt-especifico-05</title>
+    <title>Pag.prdt-especifico-08</title>
     <!-- Titulo -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
     <!-- Fonte -->
     <meta name="viewport" content="width=device-width">
     <!-- media -->
+    <link rel="stylesheet" href="Pag.prdt.esp8.css">
+    <!-- CSS -->
     <link rel="icon" href="Hb.png" type="image/png">
     <!--Imagem icon-->
 
@@ -198,6 +200,7 @@
             margin-left: 4vw;
         }
 
+        /* configuração das imagens pequenas */
         .coluna {
             display: flex;
             flex-direction: column;
@@ -205,6 +208,7 @@
 
         }
 
+        /* configuração da imagem principal */
         .main {
             display: flex;
             margin-left: 3vw;
@@ -237,25 +241,6 @@
             line-height: 79px;
         }
 
-        .estrelas input[type=radio] {
-            display: none;
-        }
-
-        .estrelas label i.fa {
-            font-size: 50px;
-            line-height: 45px;
-
-        }
-
-        .estrelas label i.fa:before {
-            content: '\f005';
-            color: #031506;
-        }
-
-        .estrelas input[type=radio]:checked~label i.fa:before {
-            color: #316B3B;
-        }
-
         .text5 {
             font-family: 'Fira Sans', sans-serif;
             font-size: 18px;
@@ -273,6 +258,7 @@
             margin-bottom: 15px;
         }
 
+        /* caixa de pergunta do clinte */
         .caixa-com {
             background-color: #889D71;
             color: #fff;
@@ -297,6 +283,7 @@
             cursor: pointer;
         }
 
+        /* vizualição dos ingredientes */
         .bloco5 {
             font-family: 'Fira Sans', sans-serif;
             font-size: 16px;
@@ -312,6 +299,7 @@
 
         }
 
+        /* Caixa de de informção de entrega */
         .cep input {
             background-color: #889D71;
             margin-right: 1vw;
@@ -324,6 +312,7 @@
             font-size: 17px;
         }
 
+        /* Botão de adicionar sacola */
         .button2 {
             text-align: center;
         }
@@ -360,10 +349,12 @@
             cursor: pointer;
         }
     </style>
+
 </head>
 
 <body>
     <header>
+        <!--Menu principal-->
         <nav class="menu01">
             <div class="logo"><a class="logo" href="Pag.produtos.html"><img src="logo.png" height="35px" alt="Logo"></a>
             </div>
@@ -385,6 +376,7 @@
                 </div>
             </div>
         </nav>
+        <!--Menu secundário-->
         <nav class="menu02">
             <div class="Esp-menu-02">
                 <a class="produto" href="Pag.produtos.html">Produto</a>
@@ -394,6 +386,7 @@
             </div>
         </nav>
     </header>
+    <!--Imagem principal com comentários-->
     <div class="fundou">
         <div class="coluna">
             <div class="img-bloco1"><img src="bloco1.png" alt="bloco1" style="width: 105px; margin-bottom: 5px;"></div>
@@ -401,8 +394,9 @@
             <div class="img-bloco3"><img src="bloco3.jpg" alt="bloco3" style="width: 105px; margin-bottom: 5px;"></div>
             <div class="img-bloco4"><img src="bloco4.jpg" alt="bloco4" style="width: 105px; margin-bottom: 5px;"></div>
         </div>
+        <!--Imagem principal com comentários-->
         <div class="main">
-            <div class="img-principal"><img src="box5.jpg" alt="box6" style="width: 563px;">
+            <div class="img-principal"><img src="box8.jpg" alt="box6" style="width: 563px;">
                 <div class="text7">Comentários</div>
                 <input class="caixa-com" type="text" placeholder="Comentários...">
                 </input>
@@ -410,58 +404,46 @@
                 </input>
             </div>
         </div>
-        <div class="text">Box Sea
-            <div class="text2">Box de peixes e acompanhamentos</div>
-            <div class="text3">R$ 100,00</div>
-            <div class="text2">2x de R$ 50,00 sem juros</div>
+        <!--Informações do produto-->
+        <div class="text">Box Legumes
+            <div class="text2">Box de legumes</div>
+            <div class="text3">R$ 50,90</div>
+            <div class="text2">2x de R$ 24,95 sem juros</div>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-            <div class="estrelas">
-                <input type="radio" id="cm_star-empty" name="fb" value="" checked />
-                <label for="cm_star-1"><i class="fa"></i></label>
-                <input type="radio" id="cm_star-1" name="fb" value="1" />
-                <label for="cm_star-2"><i class="fa"></i></label>
-                <input type="radio" id="cm_star-2" name="fb" value="2" />
-                <label for="cm_star-3"><i class="fa"></i></label>
-                <input type="radio" id="cm_star-3" name="fb" value="3" />
-                <label for="cm_star-4"><i class="fa"></i></label>
-                <input type="radio" id="cm_star-4" name="fb" value="4" />
-                <label for="cm_star-5"><i class="fa"></i></label>
-                <input type="radio" id="cm_star-5" name="fb" value="5" />
-            </div>
             <div>
                 <div class="text5">Ingredientes</div>
                 <div class="bloco5">
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Peixe</label>
+                        <label>Cenoura</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Cenoura</label>
+                        <label>Batata</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Chuchu</label>
+                        <label>Ervilha</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Rúcula</label>
+                        <label>Chuchu</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Agrião</label>
+                        <label>Brócolis</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Alface Americana</label>
+                        <label>Alface Americana</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Couve-flor</label>
+                        <label>Pimentão</label>
                     </div>
                     <div>
                         <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="esqueci-senha">Tomate-italiano</label>
+                        <label>Tomate-cereja</label>
                     </div>
                 </div>
             </div>
@@ -471,7 +453,7 @@
                 </input>
 
             </div>
-
+            <!--Caixa de de informção de entrega-->
             <div class="text4">Consulte o prazo de entrega</div>
             <div class="cep">
                 <div class="button2">
@@ -481,7 +463,7 @@
                     </form>
                 </div>
             </div>
-
+            <!--Botão de adicionar sacola-->
             <div class="button2">
                 <input type="submit" value="ADICIONAR À SACOLA" id="Adicionar à sacola" class="botao-adicionar">
             </div>

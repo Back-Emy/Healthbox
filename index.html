@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
     <!-- Fonte -->
-    <link rel="stylesheet" href="Pag.inicio.css">
-    <!-- CSS -->
     <link rel="icon" href="Hb.png" type="image/png">
     <!--Imagem icon-->
 
@@ -164,6 +162,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            margin-top: 3px;
         }
 
         .produto {
@@ -190,8 +189,8 @@
         /* img fundo */
 
         .esp-fundo {
-            position: fixed;
-            margin-top: 103px;
+            /* position: fixed; */
+            margin-top: 50px;
             top: 0;
             left: 0;
             width: 100%;
@@ -200,7 +199,7 @@
         }
 
         .esp-img-fundo {
-            height: 90vh;
+            height: 100vh;
             width: 45vw;
         }
 
@@ -215,7 +214,7 @@
         }
 
         .esp-texto {
-            margin-top: 6vh;
+            margin-top: 12vh;
             margin-left: 11vw;
             height: 50vh;
             width: 30vw;
@@ -226,36 +225,29 @@
         .fonte-menor {
             margin-top: 1vw;
             font-family: 'Fira Sans', sans-serif;
-            font-size: 3vh;
+            font-size: 4vh;
             color: #316B3B;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
-            position: fixed;
+            /* position: fixed; */
         }
 
         .fonte-maior {
-            margin-top: 3vw;
+            margin-top: -1vw;
             text-transform: uppercase;
             font-family: 'Antic Didone', serif;
             font-size: 14vh;
             color: #031506;
             text-decoration: none;
             font-weight: bold;
-            position: fixed;
+            /* position: fixed; */
 
         }
 
-
-
-
-
-
-
-
+        /* rodapé */
 
         footer {
-            position: absolute;
             bottom: 0;
             background-color: #0A250D;
             color: #FFF;
@@ -264,7 +256,7 @@
             justify-content: space-around;
         }
 
-        /* Blocos  */
+        /* Blocos   */
 
         .espaço01 {
             width: 30%;
@@ -319,14 +311,14 @@
         }
 
         .espaço-text2 {
-            margin: 10px;
+            margin: 23px;
             font-size: 13pt;
             display: flex;
             flex-direction: column;
         }
 
         .espaço-text3 {
-            margin: 10px;
+            margin: 23px;
             font-size: 13pt;
             display: flex;
             flex-direction: column;
@@ -334,7 +326,7 @@
 
         .espaço-text4 {
             width: 10%;
-            margin: 10px;
+            margin: 23px;
             font-size: 13pt;
             display: flex;
             align-items: center;
@@ -358,59 +350,66 @@
             margin-bottom: 5px;
             justify-content: space-around;
         }
+
+        /* sombra.baixo.menu  */
+
+        nav.scroll {
+            box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
+
+        }
     </style>
 </head>
 
 <body>
     <!-- Espaço para o menu -->
     <header class="menu01">
-        <div class="logo"><img src="logo.png" height="35px" alt="Logo"></div>
+        <div class="logo"><img src="/img/logo.png" height="35px" alt="Logo"></div>
         <div class="search-and-login">
             <div class="caixa-de-pergunta">
                 <input type="text" placeholder="Digite o que deseja buscar...">
-                <button class="btn-buscar-top"><img src="lupa.png" height="20px"></button>
+                <button class="btn-buscar-top"><img src="/img/lupa.png" height="20px"></button>
                 </input>
             </div>
             <div class="entrar-sacola">
                 <div class="Entrar">
-                    <a class="Tex-entrar" href="Pag.login.html">Entrar</a>
-                    <img class="entrar-tamanho" src="bonequinho.png" adlt="Usuario">
+                    <a class="Tex-entrar" href="pages/login.html">Entrar</a>
+                    <img class="entrar-tamanho" src="/img/bonequinho.png" adlt="Usuario">
                 </div>
                 <div class="bag">
-                    <a class="Tex-bag" href="Pag.sacola.html">Sacola</a>
-                    <img class="bag-tamanho" src="bag.png" alt="Sacola de compras">
+                    <a class="Tex-bag" href="pages/sacola.html">Sacola</a>
+                    <img class="bag-tamanho" src="/img/bag.png" alt="Sacola de compras">
                 </div>
             </div>
         </div>
     </header>
-    <header class="menu02">
+    <nav class="menu02">
         <div class="Esp-menu-02">
-            <a class="produto" href="Pag.produtos.html">Produto</a>
-            <a class="sobre-nos" href="Pag.sobre-nos.html">Sobre Nós</a>
+            <a class="produto" href="pages/produtos.html">Produto</a>
+            <a class="sobre-nos" href="sobre-nos.html">Sobre Nós</a>
             <a class="contato"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdoOyhzeBr3NFZyq5oc7SJYBKwEpzIQ6TAfeUqSWrKmRCHPbA/viewform">Contato</a>
         </div>
-    </header>
+    </nav>
     <!-- espaço para a imagem e o texto de fundo -->
     <main class="esp-fundo">
         <div class="esp-img-fundo">
-            <img class="img-fundo" src="fundo2.png">
+            <img class="img-fundo" src="/img/fundo2.png">
         </div>
         <div class="esp-texto">
             <p class="fonte-menor">EMAGRECER DE FORMA</p><br>
             <p class="fonte-maior">RÁPIDA,<BR>FÁCIL E<BR>GOSTOSA</p>
         </div>
     </main>
-    <!-- <footer class="Roda"> 
+    <footer class="Roda"> 
         <div class="espaço01">
             <div class="bloco01" >
-                <img class="logo" src="/Rodape/logo-br (1)nova.png">
+                <img class="logo" src="/img/logo.png">
             </div>    
             <div class="bloco02">
                     <div class="espaço-icone">
-                        <img src="/Rodape/aviao-de-papel.png" alt="local">
-                        <img src="/Rodape/telefone.png" alt="telefone">
-                        <img src="/Rodape/novo-envelope-de-e-mail.png" alt="email">
+                        <img src="/img/aviao.png" alt="local">
+                        <img src="/img/telefone.png" alt="telefone">
+                        <img src="/img/envelope.png" alt="email">
                     </div>
                     <div class="espaço-text1">
                         <div>Joinville/SC</div>
@@ -423,9 +422,9 @@
         <div class="espaço-text2">    
             <b>Institucional</b>
             <div class="subtext">
-                <div><a href="/Sobre nos/Pag.tela-sobre-nos.html">Quem Somos</a></div>
-                <div><a href="/Politica de Priv/Pag.politica-de-priv.html">Política de Privacidade</a></div>
-                <div><a href="/Termo de uso/Pag.termo-de-uso.html">Termo de Uso</a></div>
+                <div><a href="tela-sobre-nos.html">Quem Somos</a></div>
+                <div><a href="politica-de-priv.html">Política de Privacidade</a></div>
+                <div><a href="termo-de-uso.html">Termo de Uso</a></div>
                 <div><a href="">Acessibilidade Digital</a></div>
             </div>
         </div>
@@ -446,13 +445,28 @@
             <div><b>Redes Sociais</b></div>
             <div class="subtext">
                 <div class="icone-espaço-texto4">
-                    <a href="#"><img src="/Rodape/facebook (1).png"></a>
-                    <a href="#"><img src="/Rodape/instagram.png"></a>
-                    <a href="#"><img src="/Rodape/whatsapp.png"></a>
+                    <a href="#"><img src="/img/facebook.png"></a>
+                    <a href="#"><img src="/img/instagram.png"></a>
+                    <a href="#"><img src="/img/whatsapp.png"></a>
                 </div>
             </div>    
         </div>
-    </footer> -->
-</body>
+    </footer> 
 
+    <script>
+        function adicionarClasse() {
+
+            window.addEventListener('scroll', () => {
+                const navigator = document.querySelector('nav.menu02');
+
+                console.log(navigator);
+
+                const alturaPagina = window.scrollY;
+                if (alturaPagina < 10) navigator.classList.remove('scroll');
+                else navigator.classList.add('scroll');
+            });
+        }
+        adicionarClasse()
+    </script>
+</body>
 </html>
