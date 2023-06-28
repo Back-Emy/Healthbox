@@ -160,105 +160,10 @@ header {
         color: #fff;
         text-decoration: none;
     }
-
-/* Sacola */
-
-.espaço-titulo{
-    width: 92%;
-    height: 6%;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.Produto-Sacola{
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    color: black;
-    margin-left: 10px;
-    /* text-decoration: none; */
-}
-
-.img-bolsa{
-    margin-bottom: 8px;
-}
-
-.comidas{
-    width: 100%;
-    height: 43%;
-    /* background-color: #4caf4f98; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.comida01{
-    width: 100%;
-    height: 46%;
-    background-color: #f4f4f4;
-    display: flex;
-}
-.comida02{
-    width: 100%;
-    height: 46%;
-    background-color:#f4f4f4;
-    display: flex;
-}
-
-/* .comida03{
-    width: 100%;
-    height: 31%;
-    background-color: #F4F4F4;
-    display: flex;
-} */
-
-.img-box-pedido{
-    width: 120px;
-    height: 85px;
-    margin: 12px;
-}
-
-.descrição{
-    width: 40%;
-    height: 50%;
-    margin-top: 15px;
-    /* background-color: #316b3b62; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
-}
-
-.espaço-frete{
-    width: 100%;
-    height: 25%;
-    background-color: #0a250d67;
-    margin-top: 15px;
-}
-
-.caminhao{
-    width: 150px;
-    height: 37px;
-    /* background-color: #007bff8e; */
-    display: flex;
-    align-items: center;
-}
-
-.caminhao-img{
-    margin-right: 20px;
-    width: 57px;
-    height: 52px;
-    /* margin-top: -5px; */
-}
-
-
 .product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #007bff6c;
   }
   
   .product {
@@ -267,7 +172,6 @@ header {
     margin-bottom: 20px;
     background-color: #f1f1f1;
     border-radius: 5px;
-    background-color: #007bff2f;
   }
   
   .cart-menu {
@@ -277,7 +181,6 @@ header {
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 5px;
-    background-color: #88ff007e;
   }
   
   .cart-icon {
@@ -287,13 +190,12 @@ header {
   .cart-dropdown {
     display: none; /* Oculta a sacola inicialmente */
     position: absolute;
-    bottom: 0px; /* Posição vertical */
+    bottom: 30px; /* Posição vertical */
     right: 0;
     background-color: #fff;
-    width: 32vw;
-    height: 89.5vh;
+    padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 109px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   .cart-items {
@@ -323,13 +225,3 @@ header {
     border-radius: 5px;
     cursor: pointer;
   }
-
-
-.efeito-vidro {
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }

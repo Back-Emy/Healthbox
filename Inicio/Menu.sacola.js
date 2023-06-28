@@ -12,7 +12,7 @@ addToCartButtons.forEach(function(button) {
 });
 
 // Mostra ou oculta a sacola quando o ícone de sacola é clicado
-document.querySelector('.Tex-bag').addEventListener('click', function() {
+document.querySelector('.cart-icon').addEventListener('click', function() {
   var dropdown = document.querySelector('.cart-dropdown');
   dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 });

@@ -1,0 +1,217 @@
+body {
+    background-color: #D7DBD9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu principal */
+
+.menu01{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background-color: #0A250D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+/* caixa de pesquisa */
+
+.caixa-de-pergunta {
+    flex: 1;
+    margin: 0 5px;
+    /* text-transform: uppercase; */
+}
+
+.caixa-de-pergunta input[type="text"] {
+    margin-right: 1vw;
+    width: 20vw;
+    height: 21px;
+    border: none;
+    border-radius: 6px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 11px;
+    background-color: #316B3B;
+}
+.btn-buscar-top{
+    margin-left: -46px;
+    background:no-repeat;
+    border:none;
+    cursor: pointer;
+    position: fixed;
+}
+
+.search-and-login {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* Entrar e sacola */
+
+.entrar-sacola {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    height: 20px;
+    width: 170px ;
+}
+
+/* entrar */
+
+.Tex-entrar{
+    color: #fff;
+    margin-left: 31px;
+    margin-top:-7px ;
+    text-decoration: none;
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    position: fixed; 
+    font-family: 'Fira Sans', sans-serif;
+} 
+
+.entrar-tamanho{
+    width: 24px;
+    height: 24px;
+    margin-top: -13px;
+    text-transform: uppercase;
+    position: fixed; 
+}
+
+/* sacola */
+
+.bag-tamanho{
+    width: 24px;
+    height: 24px;
+    margin-top:-13px;
+    margin-left: 89px;
+    text-transform: uppercase;
+    position: fixed;
+}
+.Tex-bag{
+    color: #fff;
+    margin-left: 120px;
+    margin-top:-7px ;
+    text-decoration: none;
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    position: fixed;
+    font-family: 'Fira Sans', sans-serif;
+
+} 
+
+/* menu02  */
+
+.menu02{
+    position: fixed;
+    margin-top: 38px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #7C9E82;
+    flex-direction:row-reverse;
+    display: flex;
+}
+
+.Esp-menu-02{
+        text-transform: uppercase;
+        height: 29px;
+        width: 280px ;
+        margin-right:3vw; 
+        display: flex;
+        align-items: center;     
+        justify-content: space-around;   
+}
+
+    .produto{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .sobre-nos{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .contato{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Espaço texto geral */
+
+    .text{
+        text-align: justify;
+        margin-left: 20%;
+        margin-right: 20%;
+        line-height: 27px;
+    }
+    
+    b{
+        color: #285c2e;
+    }
+
+    .tamanho{
+        font-size: 19px;
+        line-height:40px;
+    }
+
+    .subtitulo{
+        font-size: 23px;
+        line-height:40px;
+    }
+
+    /* Espaço titulo */
+
+    .cabeçalho{
+        text-align: center;
+    }
+
+    .titulo{
+        margin-top: 128px;
+        line-height: 17px;
+        /* font-size: 30px; */
+        font-size: 3vw;
+    }
+    
+    /* sombra.baixo.menu  */
+
+    nav.scroll {
+        box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
+
+    }   
+
+    /* responsivo */
+
+    @media screen and (max-width:600px) {
+        .text{
+            text-align: justify;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 27px;
+        }
+        
+    }
