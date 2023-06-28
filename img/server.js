@@ -18,9 +18,9 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(function (err) {
-  if (!err){
+  if (!err) {
     console.log("Conexão como o Banco realizada com sucesso!!!");
-  } else{
+  } else {
     console.log("Erro: Conexão NÃO realizada", err);
   }
 });
@@ -32,19 +32,19 @@ app.get('/', (req, res) => {
 
 
 app.post('/Pag.login', (req, res) => {
-  let email = req.body.email_usuario;
-  let senha = req.body.senha_usuario;
+  let email = req.body.email;
+  let senha = req.body.senha;
 
-  connection.query("SELECT * FROM usuario where email_usuario = '" + email + "'" , function (err, rows, fields) {
+  connection.query("SELECT * FROM usuario where email_usuario = '" + email + "'", function (err, rows, fields) {
     console.log("Results:", rows);
     if (!err) {
       if (rows.length > 0) {
 
-        if ( rows[0].senha_usuario  === senha) {
-            res.send('Login com Sucesso!!!');
-            } else {
-             res.send('Senha incorreta');
-            }
+        if (rows[0].senha_usuario === senha) {
+          res.send('Login com Sucesso!!!');
+        } else {
+          res.send('Senha incorreta');
+        }
 
       } else {
         res.send('Login Falhou - Email não cadastrado');
@@ -58,28 +58,28 @@ app.post('/Pag.login', (req, res) => {
 
 
 
-app.get('/Pag.login', (req, res) => {
+app.get('/cadastro', (req, res) => {
   res.sendFile(__dirname + '/pages/cadastro.html')
 })
 
-app.post('/Pag.login', (req, res) => {
+app.post('/cadastro', (req, res) => {
   let email = req.body.email;
   let senha = req.body.senha;
 
-  connection.query("insert * FROM usuario where email_usuario = '" + email + "'" , function (err, rows, fields) {
+  connection.query("insert * FROM usuario where email_usuario = '" + email + "'", function (err, rows, fields) {
     console.log("Results:", rows);
     if (!err) {
       if (rows.length > 0) {
 
-        if ( rows[0].senha_usuario  === senha) {
-            res.send('Login com Sucesso!!!');
+        if (rows[0].senha_usuario === senha) {
+          res.send('Login com Sucesso!!!');
 
 
 
-            
-            } else {
-             res.send('Senha incorreta');
-            }
+
+        } else {
+          res.send('Senha incorreta');
+        }
 
       } else {
         res.send('Login Falhou - Email não cadastrado');

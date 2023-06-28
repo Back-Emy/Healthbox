@@ -390,7 +390,9 @@
 
             window.addEventListener('scroll', () => {
                 const navigator = document.querySelector('nav.menu02');
-                // console.log(navigator);
+                
+                console.log(navigator);
+
                 const alturaPagina = window.scrollY;
                 if (alturaPagina < 10) navigator.classList.remove('scroll');
                 else navigator.classList.add('scroll');
