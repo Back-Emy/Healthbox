@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=UTF-8>
+    <!-- Linkagem -->
+    <title>Produtos</title>
+    <!-- Titulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <!-- Fonte -->
+    <meta name="viewport" content="width=device-width">
+    <!-- CSS -->
+    <link rel="icon" href="Hb.png" type="image/png">
+    <!--Imagem icon-->
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <style>
+        body {
+            background-color: #D7DBD9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* menu principal */
+
+        .menu01 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 38px;
+            background-color: #0A250D;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+
+        /* caixa de pesquisa */
+
+        .caixa-de-pergunta {
+            flex: 1;
+            margin: 0 5px;
+            /* text-transform: uppercase; */
+        }
+
+        .caixa-de-pergunta input[type="text"] {
+            margin-right: 1vw;
+            width: 20vw;
+            height: 21px;
+            border: none;
+            border-radius: 6px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 11px;
+            background-color: #316B3B;
+        }
+
+        .btn-buscar-top {
+            margin-left: -46px;
+            background: no-repeat;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+        }
+
+        .search-and-login {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        /* Entrar e sacola */
+
+        .entrar-sacola {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            height: 20px;
+            width: 170px;
+        }
+
+        /* entrar */
+
+        .Tex-entrar {
+            color: #fff;
+            margin-left: 31px;
+            margin-top: -7px;
+            text-decoration: none;
+            font-size: 12px;
+            /* font-weight: bold; */
+            text-transform: uppercase;
+            position: fixed;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .entrar-tamanho {
+            width: 24px;
+            height: 24px;
+            margin-top: -13px;
+            text-transform: uppercase;
+            position: fixed;
+        }
+
+        /* sacola */
+
+        .bag-tamanho {
+            width: 24px;
+            height: 24px;
+            margin-top: -13px;
+            margin-left: 89px;
+            text-transform: uppercase;
+            position: fixed;
+        }
+
+        .Tex-bag {
+            color: #fff;
+            margin-left: 120px;
+            margin-top: -7px;
+            text-decoration: none;
+            font-size: 12px;
+            /* font-weight: bold; */
+            text-transform: uppercase;
+            position: fixed;
+            font-family: 'Fira Sans', sans-serif;
+
+        }
+
+        /* menu02  */
+
+        .menu02 {
+            position: fixed;
+            margin-top: 38px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #7C9E82;
+            flex-direction: row-reverse;
+            display: flex;
+        }
+
+        .Esp-menu-02 {
+            text-transform: uppercase;
+            height: 29px;
+            width: 280px;
+            margin-right: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .produto {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sobre-nos {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contato {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu03 {
+            margin-top: 45px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            flex-direction: row-reverse;
+            display: flex;
+        }
+
+        /* Menu 04 */
+
+        .menu04 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+
+        }
+
+        .card {
+            background-color: #fff;
+            width: 180px;
+            height: 260px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 12px #aaaa;
+            justify-self: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+        }
+
+        .card div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            height: 50%;
+            display: flex;
+
+        }
+
+        .card h1 {
+            margin: 1px;
+            font-size: 20px;
+        }
+
+        .card h2 {
+            font-size: 10PX;
+            color: #aaaa;
+            margin: 3px;
+        }
+
+        .card button {
+            background-color: #7C9E82;
+            height: 30px;
+            border: none;
+            padding: 4px;
+            width: 80%;
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .card button:hover {
+            background-color: #316B3B;
+            cursor: pointer;
+        }
+
+        .mais {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container-pai {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container-produtos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product {
+            margin-bottom: 15px;
+            width: 20%;
+            /* Cinco produtos por linha */
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .botao-centralizado {
+            display: block;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .botao-centralizado button {
+            background-color: #7C9E82;
+            height: 40px;
+            border: none;
+            padding: 2px;
+            width: 20%;
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .botao-centralizado button:hover {
+            background-color: #316B3B;
+            cursor: pointer;
+        }
+
+        /* responsivo */
+
+        @media screen and (max-width:600px) {
+            .text {
+                text-align: justify;
+                margin-left: 5%;
+                margin-right: 5%;
+                line-height: 27px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu01">
+            <div class="logo"><a class="logo" href="index.html"><img src="/img/logo.png" height="35px" alt="Logo"></a></div>
+            <div class="search-and-login">
+                <div class="caixa-de-pergunta">
+                    <input type="text" placeholder="Digite o que deseja buscar...">
+                    <button class="btn-buscar-top"><img src="/img/lupa.png" height="20px"></button>
+                    </input>
+                </div>
+                <div class="entrar-sacola">
+                    <div class="Entrar">
+                        <a class="Tex-entrar" href="Pag.login.html">Entrar</a>
+                        <img class="entrar-tamanho" src="/img/bonequinho.png" alt="Usuario">
+                    </div>
+                    <div class="bag">
+                        <a class="Tex-bag" href="#">Sacola</a>
+                        <img class="bag-tamanho" src="/img/bag.png" alt="Sacola de compras">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="menu02">
+            <div class="Esp-menu-02">
+                <a class="produto" href="produtos.html">Produto</a>
+                <a class="sobre-nos" href="sobre-nos.html">Sobre Nós</a>
+                <a class="contato"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdoOyhzeBr3NFZyq5oc7SJYBKwEpzIQ6TAfeUqSWrKmRCHPbA/viewform">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <div class="menu04">
+        <h1>Todos os produtos</h1>
+        <h2>Faixa de preço</h2>
+
+    </div>
+    <div class="container-pai">
+        <div class="container-produtos">
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box1.jpg">
+                    <div>
+                        <h1>BOX FRUTAS</h1>
+                        <h2>2x de R$ 50,00 sem juros</h2>
+                        <span>R$ 100,00</span>
+                        <button><a class="mais" href="prdt.esp1.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box2.jpg">
+                    <div>
+                        <h1>BOX MISTER</h1>
+                        <h2>2x de R$ 34,95 sem juros</h2>
+                        <span>R$ 70,90</span>
+                        <button><a class="mais" href="prdt.esp2.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box3.jpg">
+                    <div>
+                        <h1>BOX SEA SALAD</h1>
+                        <h2>2x de R$ 40,45 sem juros</h2>
+                        <span>R$ 80,90</span>
+                        <button><a class="mais" href="prdt.esp3.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box4.png">
+                    <div>
+                        <h1>BOX SALAD</h1>
+                        <h2>2x de R$ 24,95 sem juros</h2>
+                        <span>R$ 50,90</span>
+                        <button><a class="mais" href="prdt.esp4.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box5.jpg">
+                    <div>
+                        <h1>BOX SEA</h1>
+                        <h2>2x de R$ 50,00 sem juros</h2>
+                        <span>R$ 100,00</span>
+                        <button><a class="mais" href="prdt.esp5.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box6.jpg">
+                    <div>
+                        <h1>BOX NUTRI</h1>
+                        <h2>2x de R$ 34,95 sem juros</h2>
+                        <span>R$ 70,90</span>
+                        <button><a class="mais" href="prdt.esp6.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box7.jpg">
+                    <div>
+                        <h1>BOX FIT</h1>
+                        <h2>2x de R$ 40,45 sem juros</h2>
+                        <span>R$ 80,90</span>
+                        <button><a class="mais" href="prdt.esp7.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box8.jpg">
+                    <div>
+                        <h1>BOX LEGUMES</h1>
+                        <h2>2x de R$ 24,95 sem juros</h2>
+                        <span>R$ 50,90</span>
+                        <button><a class="mais" href="prdt.esp8.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box9.jpg">
+                    <div>
+                        <h1>BOX MED</h1>
+                        <h2>2x de R$ 37,75 sem juros</h2>
+                        <span>R$ 75,50</span>
+                        <button><a class="mais" href="prdt.esp9.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <img src="/img/box10.jpg">
+                    <div>
+                        <h1>BOX PEACH</h1>
+                        <h2>2x de R$ 20,45 sem juros</h2>
+                        <span>R$ 40,90</span>
+                        <button><a class="mais" href="prdt.esp10.html">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botao-centralizado">
+        <button>Carregar mais produtos</button>
+    </div>
+
+</body>
+
+</html>
