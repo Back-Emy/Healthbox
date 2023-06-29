@@ -385,21 +385,18 @@
             margin-bottom: 5px;
             justify-content: space-around;
         }
-
         /* sobra  */
+
         nav.scroll {
             box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
 
         }
     </style>
-
-
 </head>
-
 <body>
     <header class="FDS">
         <header class="menu01">
-            <div class="logo"><a class="logo" href="index.html"><img src="/img/logo.png" height="35px" alt="Logo"></a></div>
+            <div class="logo"><a class="logo" href="/index.html"><img src="/img/logo.png" height="35px" alt="Logo"></a></div>
             <div class="search-and-login">
                 <div class="caixa-de-pergunta">
                     <input type="text" placeholder="Digite o que deseja buscar...">
@@ -408,11 +405,11 @@
                 </div>
                 <div class="entrar-sacola">
                     <div class="Entrar">
-                        <a class="Tex-entrar" href="login.html">Entrar</a>
+                        <a class="Tex-entrar" href="/pages/login.html">Entrar</a>
                         <img class="entrar-tamanho" src="/img/bonequinho.png" alt="Usuario">
                     </div>
                     <div class="bag">
-                        <a class="Tex-bag" href="menu.sacola.html">Sacola</a>
+                        <a class="Tex-bag" href="/pages/sacola.html">Sacola</a>
                         <img class="bag-tamanho" src="/img/bag.png" alt="Sacola de compras">
                     </div>
                 </div>
@@ -420,13 +417,12 @@
         </header>
         <nav class="menu02">
             <div class="Esp-menu-02">
-                <a class="produto" href="produtos.html">Produto</a>
-                <a class="sobre-nos" href="sobre-nos.html">Sobre Nós</a>
+                <a class="produto" href="/pages/produtos.html">Produto</a>
+                <a class="sobre-nos" href="/pages/sobre-nos.html">Sobre Nós</a>
                 <a class="contato"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdoOyhzeBr3NFZyq5oc7SJYBKwEpzIQ6TAfeUqSWrKmRCHPbA/viewform">Contato</a>
             </div>
         </nav>
-
         <main class="esp-fundo">
             <div class="esp-logo">
                 <img src="/img/logo-grande.png" width="905vw" class="logo.grande" alt="Logo">
@@ -514,7 +510,7 @@
             window.addEventListener('scroll', () => {
                 const navigator = document.querySelector('nav.menu02');
 
-                console.log(navigator);
+                // console.log(navigator);
 
                 const alturaPagina = window.scrollY;
                 if (alturaPagina < 10) navigator.classList.remove('scroll');
