@@ -2,351 +2,465 @@
 <html lang="pt-br">
 
 <head>
-<meta charset=UTF-8>
-<!-- Linkagem -->
-<title>Pag.prdt-especifico-01</title>
-<!-- Titulo -->
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
-<!-- Fonte -->
-<meta name="viewport" content="width=device-width">
-<!-- media -->
-<link rel="icon" href="Hb.png" type="image/png">
-<!--Imagem icon-->
+    <meta charset=UTF-8>
+    <!-- Linkagem -->
+    <title>Pag.prdt-especifico-01</title>
+    <!-- Titulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <!-- Fonte -->
+    <meta name="viewport" content="width=device-width">
+    <!-- media -->
+    <link rel="icon" href="Hb.png" type="image/png">
+    <!--Imagem icon-->
 
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #D7DBD9;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #D7DBD9;
+        }
 
-    body * {
-        box-sizing: border-box;
-    }
+        body * {
+            box-sizing: border-box;
+        }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    /* menu principal */
+        /* menu principal */
 
 
-    .menu01 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 38px;
-        background-color: #0A250D;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
+        .menu01 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 38px;
+            background-color: #0A250D;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
 
-    .logo {
-        text-transform: uppercase;
-        margin-top: 3px;
-    }
+        .logo {
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
 
-    /* caixa de pesquisa */
+        /* caixa de pesquisa */
 
-    .caixa-de-pergunta {
-        flex: 1;
-        margin: 0 5px;
-        /* text-transform: uppercase; */
-    }
+        .caixa-de-pergunta {
+            flex: 1;
+            margin: 0 5px;
+            /* text-transform: uppercase; */
+        }
 
-    .caixa-de-pergunta input[type="text"] {
-        margin-right: 1vw;
-        width: 20vw;
-        height: 21px;
-        border: none;
-        border-radius: 6px;
-        padding: 0 20px;
-        box-sizing: border-box;
-        font-size: 11px;
-        background-color: #316B3B;
-    }
+        .caixa-de-pergunta input[type="text"] {
+            margin-right: 1vw;
+            width: 20vw;
+            height: 21px;
+            border: none;
+            border-radius: 6px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 11px;
+            background-color: #316B3B;
+        }
 
-    .btn-buscar-top {
-        margin-left: -46px;
-        background: no-repeat;
-        border: none;
-        cursor: pointer;
-        position: fixed;
-    }
+        .btn-buscar-top {
+            margin-left: -46px;
+            background: no-repeat;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+        }
 
-    .search-and-login {
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-    }
+        .search-and-login {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
 
-    /* Entrar e sacola */
+        /* Entrar e sacola */
 
-    .entrar-sacola {
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        height: 20px;
-        width: 170px;
-    }
+        .entrar-sacola {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            height: 20px;
+            width: 170px;
+        }
 
-    /* entrar */
+        /* entrar */
 
-    .Tex-entrar {
-        color: #fff;
-        margin-left: 31px;
-        margin-top: -7px;
-        text-decoration: none;
-        font-size: 12px;
-        /* font-weight: bold; */
-        text-transform: uppercase;
-        position: fixed;
-        font-family: 'Fira Sans', sans-serif;
-    }
+        .Tex-entrar {
+            color: #fff;
+            margin-left: 31px;
+            margin-top: -7px;
+            text-decoration: none;
+            font-size: 12px;
+            /* font-weight: bold; */
+            text-transform: uppercase;
+            position: fixed;
+            font-family: 'Fira Sans', sans-serif;
+        }
 
-    .entrar-tamanho {
-        width: 24px;
-        height: 24px;
-        margin-top: -13px;
-        text-transform: uppercase;
-        position: fixed;
-    }
+        .entrar-tamanho {
+            width: 24px;
+            height: 24px;
+            margin-top: -13px;
+            text-transform: uppercase;
+            position: fixed;
+        }
 
-    /* sacola */
+        /* sacola */
 
-    .bag-tamanho {
-        width: 24px;
-        height: 24px;
-        margin-top: -13px;
-        margin-left: 89px;
-        text-transform: uppercase;
-        position: fixed;
-    }
+        .bag-tamanho {
+            width: 24px;
+            height: 24px;
+            margin-top: -13px;
+            margin-left: 89px;
+            text-transform: uppercase;
+            position: fixed;
+        }
 
-    .Tex-bag {
-        color: #fff;
-        margin-left: 120px;
-        margin-top: -7px;
-        text-decoration: none;
-        font-size: 12px;
-        /* font-weight: bold; */
-        text-transform: uppercase;
-        position: fixed;
-        font-family: 'Fira Sans', sans-serif;
+        .Tex-bag {
+            color: #fff;
+            margin-left: 120px;
+            margin-top: -7px;
+            text-decoration: none;
+            font-size: 12px;
+            /* font-weight: bold; */
+            text-transform: uppercase;
+            position: fixed;
+            font-family: 'Fira Sans', sans-serif;
 
-    }
+        }
 
-    /* menu02  */
+        /* menu02  */
 
-    .menu02 {
-        position: fixed;
-        margin-top: 38px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        background-color: #7C9E82;
-        flex-direction: row-reverse;
-        display: flex;
-    }
+        .menu02 {
+            position: fixed;
+            margin-top: 38px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #7C9E82;
+            flex-direction: row-reverse;
+            display: flex;
+        }
 
-    .Esp-menu-02 {
-        text-transform: uppercase;
-        height: 29px;
-        width: 280px;
-        margin-right: 3vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+        .Esp-menu-02 {
+            text-transform: uppercase;
+            height: 29px;
+            width: 280px;
+            margin-right: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
 
-    .produto {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 12px;
-        color: #fff;
-        text-decoration: none;
-    }
+        .produto {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
 
-    .sobre-nos {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 12px;
-        color: #fff;
-        text-decoration: none;
-    }
+        .sobre-nos {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
 
-    .contato {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 12px;
-        color: #fff;
-        text-decoration: none;
-    }
+        .contato {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
 
-    .fundou {
-        display: flex;
-        margin-top: 22vh;
-        margin-left: 4vw;
-    }
+        .fundou {
+            display: flex;
+            margin-top: 22vh;
+            margin-left: 4vw;
+            margin-bottom: 5%;
+        }
 
-    /* configuração das imagens pequenas */
-    .coluna {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        /* configuração das imagens pequenas */
+        .coluna {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
 
-    }
+        }
 
-    /* configuração da imagem principal */
-    .main {
-        display: flex;
-        margin-left: 3vw;
-        margin-left: 55px;
+        /* configuração da imagem principal */
+        .main {
+            display: flex;
+            margin-left: 3vw;
+            margin-left: 55px;
 
-    }
+        }
 
-    .text {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 45px;
-        font-weight: 400;
-        font-weight: bold;
-        line-height: 65px;
-        margin-left: 55px;
-    }
+        .text {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 400;
+            font-weight: bold;
+            line-height: 65px;
+            margin-left: 55px;
+        }
 
-    .text2 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        margin-bottom: 3px;
-    }
+        .text2 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 3px;
+        }
 
-    .text3 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 45px;
-        font-weight: 400;
-        font-weight: bold;
-        line-height: 79px;
-    }
+        .text3 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 400;
+            font-weight: bold;
+            line-height: 79px;
+        }
 
-    .text5 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        font-weight: bold;
-        height: 45px;
-    }
+        .text5 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            font-weight: bold;
+            height: 45px;
+        }
 
-    .text7 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        font-weight: bold;
-        margin-top: 35px;
-        margin-bottom: 15px;
-    }
+        .text7 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
 
-    /* caixa de pergunta do clinte */
-    .caixa-com {
-        background-color: #889D71;
-        color: #fff;
-        margin: 10px;
-        line-height: 55px;
-        padding: 8px 16px;
-        font-size: 14px;
-        border: none;
-        width: 96%;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+        /* caixa de pergunta do clinte */
+        .caixa-com {
+            background-color: #889D71;
+            color: #fff;
+            margin: 10px;
+            line-height: 55px;
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            width: 96%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    .caixa {
-        background-color: #889D71;
-        color: #fff;
-        padding: 8px 16px;
-        font-size: 16px;
-        border: none;
-        width: 100%;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+        .caixa {
+            background-color: #889D71;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 16px;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    /* vizualição dos ingredientes */
-    .bloco5 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        column-count: 2;
-    }
+        /* vizualição dos ingredientes */
+        .bloco5 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            column-count: 2;
+        }
 
-    .text4 {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 4px;
+        .text4 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 4px;
 
-    }
+        }
 
-    /* Caixa de de informção de entrega */
-    .cep input {
-        background-color: #889D71;
-        margin-right: 1vw;
-        height: 35px;
-        border: none;
-        border-radius: 6px;
-        padding: 0 20px;
-        box-sizing: border-box;
-        color: #031506;
-        font-size: 17px;
-    }
+        /* Caixa de de informção de entrega */
+        .cep input {
+            background-color: #889D71;
+            margin-right: 1vw;
+            height: 35px;
+            border: none;
+            border-radius: 6px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            color: #031506;
+            font-size: 17px;
+        }
 
-    /* Botão de adicionar sacola */
-    .button2 {
-        text-align: center;
-    }
+        /* Botão de adicionar sacola */
+        .button2 {
+            text-align: center;
+        }
 
-    .button2 input[type="button"] {
-        background-color: #889D71;
-        color: #fff;
-        padding: 8px 16px;
-        font-size: 16px;
-        font-weight: bold;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+        .button2 input[type="button"] {
+            background-color: #889D71;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    .button2 input[type="button"]:hover {
-        background-color: #316B3B;
-    }
+        .button2 input[type="button"]:hover {
+            background-color: #316B3B;
+        }
 
-    .botao-adicionar {
-        background-color: #85A062;
-        height: 45px;
-        border: none;
-        padding: 4px;
-        width: 100%;
-        color: #fff;
-        font-size: 22px;
-        font-weight: bold;
-        border-radius: 4px;
-    }
+        .botao-adicionar {
+            background-color: #85A062;
+            height: 45px;
+            border: none;
+            padding: 4px;
+            width: 100%;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
 
-    .botao-adicionar:hover {
-        background-color: #7C9E82;
-        cursor: pointer;
-    }
-</style>
+        .botao-adicionar:hover {
+            background-color: #7C9E82;
+            cursor: pointer;
+        }
+                /* rodapé */
+
+                footer {
+            bottom: 0;
+            background-color: #0A250D;
+            color: #FFF;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Blocos   */
+
+        .espaço01 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        .bloco01 {
+            display: flex;
+            height: 20vh;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .bloco01>img {
+            width: 17vw;
+            height: 5vw;
+
+        }
+
+        .bloco02 {
+            display: flex;
+            margin: 10px;
+        }
+
+        .espaço-icone>img {
+            display: flex;
+            flex-direction: column;
+            width: 20px;
+            margin: 10px;
+        }
+
+        .espaço-icone>img {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            color: #FFF;
+            margin: 4pt;
+            display: flex;
+        }
+
+        .espaço-text1>div {
+            font-size: 12pt;
+            display: flex;
+            flex-direction: column;
+            line-height: 23px;
+            margin: 8px;
+        }
+
+        .espaço-text2 {
+            margin: 23px;
+            font-size: 13pt;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .espaço-text3 {
+            margin: 23px;
+            font-size: 13pt;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .espaço-text4 {
+            width: 10%;
+            margin: 23px;
+            font-size: 13pt;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .subtext {
+            margin: 10px;
+            font-size: 12pt;
+        }
+
+        .icone-espaço-texto4 {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .icone-espaço-texto4>img {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 5px;
+            justify-content: space-around;
+        }
+
+        /* sombra.baixo.menu  */
+
+        nav.scroll {
+            box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
+
+        }
+
+    </style>
 
 </head>
 
@@ -354,22 +468,23 @@
     <header>
         <!--Menu principal-->
         <nav class="menu01">
-            <div class="logo"><a class="logo" href="Pag.produtos.html"><img src="logo.png" height="35px" alt="Logo"></a>
+            <div class="logo"><a class="logo" href="produtos.html"><img src="/img/logo.png" height="35px"
+                        alt="Logo"></a>
             </div>
             <div class="search-and-login">
                 <div class="caixa-de-pergunta">
                     <input type="text" placeholder="Digite o que deseja buscar...">
-                    <button class="btn-buscar-top"><img src="lupa.png" height="20px"></button>
+                    <button class="btn-buscar-top"><img src="/img/lupa.png" height="20px"></button>
                     </input>
                 </div>
                 <div class="entrar-sacola">
                     <div class="Entrar">
-                        <a class="Tex-entrar" href="Pag.login.html">Entrar</a>
-                        <img class="entrar-tamanho" src="bonequinho.png" alt="Usuario">
+                        <a class="Tex-entrar" href="login.html">Entrar</a>
+                        <img class="entrar-tamanho" src="/img/bonequinho.png" alt="Usuario">
                     </div>
                     <div class="bag">
-                        <a class="Tex-bag" href="Menu.sacola.html">Sacola</a>
-                        <img class="bag-tamanho" src="bag.png" alt="Sacola de compras">
+                        <a class="Tex-bag" href="sacola.html">Sacola</a>
+                        <img class="bag-tamanho" src="/img/bag.png" alt="Sacola de compras">
                     </div>
                 </div>
             </div>
@@ -377,8 +492,8 @@
         <!--Menu secundário-->
         <nav class="menu02">
             <div class="Esp-menu-02">
-                <a class="produto" href="Pag.produtos.html">Produto</a>
-                <a class="sobre-nos" href="Pag.sobre-nos.html">Sobre Nós</a>
+                <a class="produto" href="produtos.html">Produto</a>
+                <a class="sobre-nos" href="sobre-nos.html">Sobre Nós</a>
                 <a class="contato"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdoOyhzeBr3NFZyq5oc7SJYBKwEpzIQ6TAfeUqSWrKmRCHPbA/viewform">Contato</a>
             </div>
@@ -387,14 +502,18 @@
     <!--Imagens dos blocos menores-->
     <div class="fundou">
         <div class="coluna">
-            <div class="img-bloco1"><img src="bloco1.png" alt="bloco1" style="width: 105px; margin-bottom: 5px;"></div>
-            <div class="img-bloco2"><img src="bloco2.jpg" alt="bloco2" style="width: 105px; margin-bottom: 5px;"></div>
-            <div class="img-bloco3"><img src="bloco3.jpg" alt="bloco3" style="width: 105px; margin-bottom: 5px;"></div>
-            <div class="img-bloco4"><img src="bloco4.jpg" alt="bloco4" style="width: 105px; margin-bottom: 5px;"></div>
+            <div class="img-bloco1"><img src="/img/bloco1.png" alt="bloco1" style="width: 105px; margin-bottom: 5px;">
+            </div>
+            <div class="img-bloco2"><img src="/img/bloco2.jpg" alt="bloco2" style="width: 105px; margin-bottom: 5px;">
+            </div>
+            <div class="img-bloco3"><img src="/img/bloco3.jpg" alt="bloco3" style="width: 105px; margin-bottom: 5px;">
+            </div>
+            <div class="img-bloco4"><img src="/img/bloco4.jpg" alt="bloco4" style="width: 105px; margin-bottom: 5px;">
+            </div>
         </div>
         <!--Imagem principal com comentários-->
         <div class="main">
-            <div class="img-principal"><img src="box1.jpg" alt="box6" style="width: 563px;">
+            <div class="img-principal"><img src="/img/box1.jpg" alt="box6" style="width: 563px;">
                 <div class="text7">Comentários</div>
                 <input class="caixa-com" type="text" placeholder="Comentários...">
                 </input>
@@ -468,7 +587,55 @@
             </div>
         </div>
     </div>
-    </div>
+    <footer class="Roda"> 
+        <div class="espaço01">
+            <div class="bloco01" >
+                <img class="logo" src="/img/logo.png">
+            </div>    
+            <div class="bloco02">
+                    <div class="espaço-icone">
+                        <img src="/img/aviao.png" alt="local">
+                        <img src="/img/telefone.png" alt="telefone">
+                        <img src="/img/envelope.png" alt="email">
+                    </div>
+                    <div class="espaço-text1">
+                        <div>Joinville/SC</div>
+                        <div>Fone/Whatsapp: (47)00000-0000</div>
+                        <div>Contato: Healthbox@gmail.com.br</div>
+                    </div>
+            </div>        
+        </div>
+        <div class="espaço-text2">    
+            <b>Institucional</b>
+            <div class="subtext">
+                <div><a href="tela-sobre-nos.html">Quem Somos</a></div>
+                <div><a href="politica-de-priv.html">Política de Privacidade</a></div>
+                <div><a href="termo-de-uso.html">Termo de Uso</a></div>
+                <div><a href="">Acessibilidade Digital</a></div>
+            </div>
+        </div>
+        <div class="espaço-text3">
+            <b>Dúvida</b>
+            <div class="subtext">
+                <div><a href="#">Pedidos</a></div>
+                <div><a href="#">Conta</a></div>
+                <div><a href="#">Entrega</a></div>
+                <div><a href="#">Pagamento</a></div>
+                <div><a href="#">Dúvidas Frequentes</a></div>
+                <div><a href="#">Fale Conosco</a></div>
+            </div>
+        </div>
+        <div class="espaço-text4">
+            <b>Redes Sociais</b>
+            <div class="subtext">
+                <div class="icone-espaço-texto4">
+                    <a href="#"><img src="/img/facebook.png"></a>
+                    <a href="#"><img src="/img/instagram.png"></a>
+                    <a href="#"><img src="/img/whatsapp.png"></a>
+                </div>
+            </div>    
+        </div>
+    </footer> 
     </header>
 </body>
 

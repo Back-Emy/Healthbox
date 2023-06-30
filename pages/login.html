@@ -32,12 +32,22 @@
 
         .espaço {
             width: 100vw;
-            height: 100vh;
+            height: 92vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        .voltar{
+            background-color: #163D18;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-left: 30px;
+            border: none;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 20pt;
+            display: flex;
+            align-content: space-between;
+        }
         .login-esp {
             width: 60vw;
             height: 70vh;
@@ -103,6 +113,20 @@
             margin-top: 2px;
             margin-bottom: 4px;
             overflow: hidden;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            background-color: white;
+            width: 13px;
+            height: 13px;
+            border-radius: 3px;
+            margin-bottom: -2px;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #113313;
+            
         }
 
         .desenho {
@@ -253,6 +277,7 @@
 </head>
 
 <body>
+    <button class="voltar"><a href="/index.html"><img src="/img/botao-voltar.png" width="20px" alt="flecha2"></a></button>
     <div class="espaço">
         <div class="login-esp">
             <div class="texto-fundo">
@@ -271,7 +296,7 @@
                 <div class="Op">
                     <p class="esqueci-senha">Esqueci minha senha</p>
                     <div>
-                        <input type="checkbox" name="conectado" class="flag">
+                        <input type="checkbox" name="conectado" class="flag" checked="checked">
                         <label for="conectado" class="esqueci-senha">Mantenha-me conectado</label>
                     </div>
                 </div>
@@ -285,9 +310,8 @@
                     <p class="small-letters">Entrar com:</p>
                     <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/img/facebook.png"
                             alt="" class="face" width="25px"></a>
-                    <a
-                        href="https://accounts.google.com/v3/signin/identifier?dsh=S705472775%3A1686921225504753&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img
-                            src="google.png" alt="" class="g+" width="25px"></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S705472775%3A1686921225504753&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img
+                            src="/img/google.png" alt="" class="g+" width="25px"></a>
                     <a href=""><img src="/img/apple.png" alt="" class="apple" width="25px"></a>
                 </div>
 
