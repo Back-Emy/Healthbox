@@ -11,7 +11,7 @@
     <!-- Fonte -->
     <meta name="viewport" content="width=device-width">
     <!-- media -->
-    <link rel="icon" href="Hb.png" type="image/png">
+    <link rel="icon" href="/img/Hb.png" type="image/png">
     <!--Imagem icon-->
 
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -194,7 +194,7 @@
 
         .fundou {
             display: flex;
-            margin-top: 22vh;
+            margin-top: 19vh;
             margin-left: 4vw;
             margin-bottom: 5%;
         }
@@ -246,6 +246,7 @@
             font-weight: 400;
             font-weight: bold;
             height: 45px;
+            margin-bottom: 5px;
         }
 
         .text7 {
@@ -289,6 +290,20 @@
             font-weight: 400;
             line-height: 25px;
             column-count: 2;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            background-color: white;
+            width: 13px;
+            height: 13px;
+            border-radius: 3px;
+            margin-bottom: -2px;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #113313;
+
         }
 
         .text4 {
@@ -347,9 +362,10 @@
             background-color: #7C9E82;
             cursor: pointer;
         }
-                /* rodapé */
 
-                footer {
+        /* rodapé */
+
+        footer {
             bottom: 0;
             background-color: #0A250D;
             color: #FFF;
@@ -459,7 +475,6 @@
             box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.1);
 
         }
-
     </style>
 
 </head>
@@ -587,25 +602,26 @@
             </div>
         </div>
     </div>
-    <footer class="Roda"> 
+    </header>
+    <footer class="Roda">
         <div class="espaço01">
-            <div class="bloco01" >
+            <div class="bloco01">
                 <img class="logo" src="/img/logo.png">
-            </div>    
+            </div>
             <div class="bloco02">
-                    <div class="espaço-icone">
-                        <img src="/img/aviao.png" alt="local">
-                        <img src="/img/telefone.png" alt="telefone">
-                        <img src="/img/envelope.png" alt="email">
-                    </div>
-                    <div class="espaço-text1">
-                        <div>Joinville/SC</div>
-                        <div>Fone/Whatsapp: (47)00000-0000</div>
-                        <div>Contato: Healthbox@gmail.com.br</div>
-                    </div>
-            </div>        
+                <div class="espaço-icone">
+                    <img src="/img/aviao.png" alt="local">
+                    <img src="/img/telefone.png" alt="telefone">
+                    <img src="/img/envelope.png" alt="email">
+                </div>
+                <div class="espaço-text1">
+                    <div>Joinville/SC</div>
+                    <div>Fone/Whatsapp: (47)00000-0000</div>
+                    <div>Contato: Healthbox@gmail.com.br</div>
+                </div>
+            </div>
         </div>
-        <div class="espaço-text2">    
+        <div class="espaço-text2">
             <b>Institucional</b>
             <div class="subtext">
                 <div><a href="tela-sobre-nos.html">Quem Somos</a></div>
@@ -633,11 +649,24 @@
                     <a href="#"><img src="/img/instagram.png"></a>
                     <a href="#"><img src="/img/whatsapp.png"></a>
                 </div>
-            </div>    
+            </div>
         </div>
-    </footer> 
-    </header>
-</body>
+    </footer>
+    <script>
+        function adicionarClasse() {
 
+            window.addEventListener('scroll', () => {
+                const navigator = document.querySelector('nav.menu02');
+
+                console.log(navigator);
+
+                const alturaPagina = window.scrollY;
+                if (alturaPagina < 10) navigator.classList.remove('scroll');
+                else navigator.classList.add('scroll');
+            });
+        }
+        adicionarClasse()
+    </script>
+</body>
 
 </html>
