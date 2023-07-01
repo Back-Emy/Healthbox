@@ -4,7 +4,7 @@
 <head>
     <meta charset=UTF-8>
     <!-- Linkagem -->
-    <title>Pag.Login.</title>
+    <title>Pag.Cadastro</title>
     <!-- Titulo -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
@@ -25,18 +25,11 @@
             background-image: url(/img/fundo-fruta.png);
             background-size: auto;
         }
-
         body * {
             box-sizing: border-box;
         }
+        /* Quadro fundo */
 
-        .espaço {
-            width: 100vw;
-            height: 92vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
         .voltar{
             background-color: #163D18;
             border-radius: 8px;
@@ -48,6 +41,14 @@
             display: flex;
             align-content: space-between;
         }
+
+        .espaço {
+            width: 100vw;
+            height: 92vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .login-esp {
             width: 60vw;
             height: 70vh;
@@ -56,7 +57,6 @@
             align-items: center;
             flex-direction: column;
         }
-
         .texto-fundo {
             width: 60%;
             height: 120%;
@@ -69,6 +69,7 @@
             border-radius: 3%;
             box-shadow: 0px 10px 40px #163D18;
         }
+        /* Entrada de dados  */
 
         .espaço-tex {
             display: flex;
@@ -77,7 +78,6 @@
             justify-content: center;
             width: 100%;
         }
-
         .espaço-tex>input {
             width: 100%;
             border: none;
@@ -90,89 +90,98 @@
             box-shadow: 0px 10px 40px #163d18be;
             margin-bottom: 10px;
         }
-
         .espaço-tex>label {
             font-family: 'Fira Sans', sans-serif;
             color: #D7DBD9;
             margin-bottom: 9px;
             font-weight: bold
         }
-
         .espaço-tex>input::placeholder {
             color: #163d18be;
         }
-
-        .Op {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 95%;
-            height: 4%;
-            font-size: 13px;
-            color: #D7DBD9;
-            margin-top: 2px;
-            margin-bottom: 4px;
-            overflow: hidden;
-        }
-
-        input[type="checkbox"] {
-            -webkit-appearance: none;
-            background-color: white;
-            width: 13px;
-            height: 13px;
-            border-radius: 3px;
-            margin-bottom: -2px;
-        }
-
-        input[type="checkbox"]:checked {
-            background-color: #113313;
-            
-        }
-
-        .desenho {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .espaço-tex>input {
             width: 100%;
-            height: 6%;
-            margin-bottom: 4px;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            background: #D7DBD9;
+            font-size: 11pt;
+            outline: none;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 40px #163d18be;
+            margin-bottom: 10px;
         }
-
-        .bloquinho-direita {
-            background-color: #D7DBD9;
-            width: 40%;
-            height: 8%;
-        }
-
-        .bloquinho-esquerda {
-            background-color: #D7DBD9;
-            width: 40%;
-            height: 8%;
-        }
-
-        .desenho>p {
-            font-size: 20px;
-            color: #D7DBD9;
-        }
-
-
-        .redes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 95%;
-            height: 5%;
-            margin-top: 9px;
-        }
-
-        .redes>p {
+        .espaço-tex>label {
             font-family: 'Fira Sans', sans-serif;
             color: #D7DBD9;
-            margin-bottom: 5px;
-            font-weight: bold;
-            margin-bottom: 19px;
+            margin-bottom: 9px;
+            font-weight: bold
         }
+        .espaço-tex>input::placeholder {
+            color: #163d18be;
+        }
+        /* Lado lado */
 
+        .espaço-tex-duplo {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+        }
+        .espaço-tex-01 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 45%;
+        }
+        .espaço-tex-01>input {
+            height: 33px;
+            color: #163d18be;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            background: #D7DBD9;
+            font-size: 11pt;
+            outline: none;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 40px #163d18be;
+            margin-bottom: 10px;
+        }
+        .espaço-tex-01>label {
+            font-family: 'Fira Sans', sans-serif;
+            color: #D7DBD9;
+            margin-bottom: 9px;
+            font-weight: bold
+        }
+        .espaço-tex-01>input::placeholder {
+            color: #163d18be;
+        }
+        .espaço-tex-01>input {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            background: #D7DBD9;
+            font-size: 11pt;
+            outline: none;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 40px #163d18be;
+            margin-bottom: 10px;
+        }
+        .espaço-tex-01>label {
+            font-family: 'Fira Sans', sans-serif;
+            color: #D7DBD9;
+            margin-bottom: 9px;
+            font-weight: bold
+        }
+        .espaço-tex-01>input::placeholder {
+            color: #163d18be;
+        }
+        .Tell {
+            height: 5vh;
+        }
+        /* Termos  */
 
         .termos_de_uso {
             margin-top: 10px;
@@ -181,14 +190,13 @@
             font-size: 9pt;
             text-align: center;
         }
-
         .termos_link_link_uso {
             color: rgb(255, 255, 255);
         }
-
         .termos_link_link_uso {
             color: rgb(255, 255, 255);
         }
+        /* botão */
 
         .btn-login {
             text-decoration: none;
@@ -196,13 +204,14 @@
             background-color: #85A062;
             width: 50%;
             border-radius: 8px;
-            padding: 10px 0px;
-            margin-top: 38px;
+            padding: 7px 0px;
+            /* margin-top: 15px; */
             border: none;
             font-family: 'Fira Sans', sans-serif;
             font-size: 20pt;
             font-weight: bold;
         }
+        /* Fazer login */
 
         .registro2 {
             display: flex;
@@ -212,14 +221,12 @@
             height: 5%;
             margin-top: 9px;
         }
-
         .registro2>p {
             font-family: 'Fira Sans', sans-serif;
             color: #D7DBD9;
             text-align: center;
             font-weight: bold;
         }
-
         .fazer_cadastro {
             color: rgb(255, 255, 255);
         }
@@ -233,6 +240,7 @@
 
             .login-esp {
                 width: 78%;
+                height: 75%;
             }
 
             .texto-fundo {
@@ -240,7 +248,6 @@
             }
 
         }
-
 
         @media screen and (max-width:900px) {
             .espaço {
@@ -273,7 +280,6 @@
 
         }
     </style>
-
 </head>
 
 <body>
@@ -284,53 +290,47 @@
                 <div class="img">
                     <a class="img" href="/index.html"><img src="/img/logo.png" width="160vw" alt="Logo"></a>
                 </div>
-                <form class="espaço-tex" action="/login" method="post">
-                    <label for="espaço-ususario">E-mail</label>
-                    <input type="text" name="username" id="username" placeholder="">
+                <div class="espaço-tex">
+                    <label for="espaço-nome">Nome Completo</label>
+                    <input type="text" name="usuario" placeholder="Nome Completo">
                 </div>
                 <div class="espaço-tex">
-                    <label for="espaço-senha">Senha</label>
-                    <input type="password" name="senha" id="password" placeholder="">
+                    <label for="espaço-email">E-mail</label>
+                    <input type="text" name="E-mail" placeholder="E-mail">
                 </div>
-
-                <div class="Op">
-                    <p class="esqueci-senha">Esqueci minha senha</p>
-                    <div>
-                        <input type="checkbox" name="conectado" class="flag" checked="checked">
-                        <label for="conectado" class="esqueci-senha">Mantenha-me conectado</label>
+                <div class="espaço-tex">
+                    <label for="espaço-senha">Crie uma senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <div class="espaço-tex-duplo">
+                    <div class="espaço-tex-01">
+                        <label for="espaço-data-nasc">Data de nascimento</label>
+                        <input type="date" name="Data" placeholder="Data">
+                    </div>
+                    <div class="espaço-tex-01">
+                        <label for="Telefone">DDD + telefone</label>
+                        <input class="Tell" type="text" name="Tell" placeholder="Tell">
                     </div>
                 </div>
-                <div class="desenho">
-                    <div class="bloquinho-direita"></div>
-                    <p>OU</p>
-                    <div class="bloquinho-esquerda"></div>
-                </div>
 
-                <div class="redes">
-                    <p class="small-letters">Entrar com:</p>
-                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/img/facebook.png"
-                            alt="" class="face" width="25px"></a>
-                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S705472775%3A1686921225504753&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img
-                            src="/img/google.png" alt="" class="g+" width="25px"></a>
-                    <a href=""><img src="/img/apple.png" alt="" class="apple" width="25px"></a>
-                </div>
-
-                <!-- <div class="termos_de_uso">
-                            
-                            <p class="02"><input type="checkbox" name="conectado" class="flag">  Ao fazer login, você concorda
-                                com a <a href="Pag.politica-de-priv.html" class="termos_link_link_uso">Política de Privacidade</a> e com os
-                                <a href="Pag.termo-de-uso.html" class="termos_link_link_uso">Termos de Uso</a> da Health box.</p></p>
-                            </div>                    -->
-                <button class="btn-login" type="submit">ENTRAR</button></form>
-
-                <div class="registro2">
-                    <p class="small-letters registro">NÂO ESTA REGISTRADO?
-                        <a href="cadastro.html" class="fazer_cadastro">FAZER CADASTRO!</a>
+                <div class="termos_de_uso">
+                    <p class="02"><input type="checkbox" name="conectado" class="flag"> Ao fazer login, você concorda
+                        com a <a href="politica-de-priv.html" class="termos_link_link_uso">Política de
+                            Privacidade</a> e com os
+                        <a href="termo-de-uso.html" class="termos_link_link_uso">Termos de Uso</a> da Health box.
+                    </p>
                     </p>
                 </div>
+                <button class="btn-login"><a class="btn-login" href="">FINALIZAR</a></button>
+
+                <div class="registro2">
+                    <p class="small-letters registro">Já é usuário?
+                        <a href="login.html" class="fazer_cadastro">Fazer login!</a>
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
 </body>
-
 </html>

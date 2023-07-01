@@ -290,17 +290,18 @@
                 <div class="img">
                     <a class="img" href="/index.html"><img src="/img/logo.png" width="160vw" alt="Logo"></a>
                 </div>
+                <form action="/cadastro" method="post">
                 <div class="espaço-tex">
                     <label for="espaço-nome">Nome Completo</label>
-                    <input type="text" name="usuario" placeholder="Nome Completo">
+                    <input type="text" name="nome" placeholder="Nome Completo">
                 </div>
                 <div class="espaço-tex">
                     <label for="espaço-email">E-mail</label>
-                    <input type="text" name="E-mail" placeholder="E-mail">
+                    <input type="text" name="email" placeholder="E-mail">
                 </div>
                 <div class="espaço-tex">
                     <label for="espaço-senha">Crie uma senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="password" placeholder="Senha">
                 </div>
                 <div class="espaço-tex-duplo">
                     <div class="espaço-tex-01">
@@ -309,7 +310,7 @@
                     </div>
                     <div class="espaço-tex-01">
                         <label for="Telefone">DDD + telefone</label>
-                        <input class="Tell" type="text" name="Tell" placeholder="Tell">
+                        <input class="Tell" type="text" name="telefone" placeholder="Tell">
                     </div>
                 </div>
 
@@ -321,14 +322,14 @@
                     </p>
                     </p>
                 </div>
-                <button class="btn-login"><a class="btn-login" href="">FINALIZAR</a></button>
+                <button class="btn-login" type="submit">FINALIZAR</button>
 
                 <div class="registro2">
                     <p class="small-letters registro">Já é usuário?
                         <a href="login.html" class="fazer_cadastro">Fazer login!</a>
                     </p>
                 </div>
-
+                </form>
             </div>
         </div>
     </div>
