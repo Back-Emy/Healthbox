@@ -4,25 +4,25 @@
 <head>
     <meta charset=UTF-8>
     <!-- Linkagem -->
-    <title>Pag.Login.</title>
+    <title>Login</title>
     <!-- Titulo -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
     <!-- Fonte -->
-    <meta name="viewport" content="width=device-width">
-    <!-- media -->
-    <link rel="icon" href="/img/Hb.png" type="image/png">
+    <link rel="icon" href="https://i.pinimg.com/originals/ca/f9/b0/caf9b07d4b10079049147d5af166777f.png	"
+        type="image/png">
     <!--Imagem icon-->
 
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
 
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #D7DBD9;
-            background-image: url(/img/fundo-fruta.png);
+            background-image: url(https://i.pinimg.com/originals/3f/2b/c9/3f2bc9a0205a24c3ea4ad9f4b0237291.png);
             background-size: auto;
         }
 
@@ -37,7 +37,9 @@
             justify-content: center;
             align-items: center;
         }
-        .voltar{
+
+        /* Voltar para a pag anterior */
+        .voltar {
             background-color: #163D18;
             border-radius: 8px;
             margin-top: 10px;
@@ -48,6 +50,7 @@
             display: flex;
             align-content: space-between;
         }
+
         .login-esp {
             width: 60vw;
             height: 70vh;
@@ -57,17 +60,49 @@
             flex-direction: column;
         }
 
+        /* Espaço form */
         .texto-fundo {
             width: 60%;
-            height: 120%;
+            height: 100%;
             display: flex;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
             flex-direction: column;
             padding: 15px 35px;
             background-color: #316B3B;
             border-radius: 3%;
+            overflow: auto;
             box-shadow: 0px 10px 40px #163D18;
+        }
+
+        /* espaço logo */
+        .img {
+            display: flex;
+            /* background-color: rgba(0, 255, 255, 0.428); */
+            height: 10vh;
+            width: 16vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* espaço textos */
+
+        .formi{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .fundo {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            width: 100%;
+            height: 43vh;
+            margin-top: 8vh;
+            /* background-color: rgba(137, 43, 226, 0.462); */
         }
 
         .espaço-tex {
@@ -76,6 +111,7 @@
             align-items: flex-start;
             justify-content: center;
             width: 100%;
+            height: 160px;
         }
 
         .espaço-tex>input {
@@ -107,17 +143,19 @@
             justify-content: space-between;
             align-items: center;
             width: 95%;
-            height: 4%;
-            font-size: 13px;
+            height: 50px;
+            font-size: 18px;
             color: #D7DBD9;
-            margin-top: 2px;
+            margin-top: 4px;
             margin-bottom: 4px;
-            overflow: hidden;
+            /* overflow: hidden; */
+            /* background-color: rgba(100, 148, 237, 0.645); */
         }
 
+        /* Manterme conectato */
         input[type="checkbox"] {
             -webkit-appearance: none;
-            background-color: white;
+            background-color: #113313;
             width: 13px;
             height: 13px;
             border-radius: 3px;
@@ -125,17 +163,19 @@
         }
 
         input[type="checkbox"]:checked {
-            background-color: #113313;
-            
+            background-color: white;
+
         }
 
+        /* risco no centro  */
         .desenho {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            height: 6%;
+            height: 30px;
             margin-bottom: 4px;
+            /* background-color: rgba(128, 255, 0, 0.229); */
         }
 
         .bloquinho-direita {
@@ -155,14 +195,13 @@
             color: #D7DBD9;
         }
 
-
         .redes {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 95%;
-            height: 5%;
-            margin-top: 9px;
+            height: 80px;
+            /* background-color: rgba(127, 255, 212, 0.518); */
         }
 
         .redes>p {
@@ -174,22 +213,7 @@
         }
 
 
-        .termos_de_uso {
-            margin-top: 10px;
-            font-family: 'Fira Sans', sans-serif;
-            color: #D7DBD9;
-            font-size: 9pt;
-            text-align: center;
-        }
-
-        .termos_link_link_uso {
-            color: rgb(255, 255, 255);
-        }
-
-        .termos_link_link_uso {
-            color: rgb(255, 255, 255);
-        }
-
+        /* Botão para login */
         .btn-login {
             text-decoration: none;
             color: #D7DBD9;
@@ -197,7 +221,7 @@
             width: 50%;
             border-radius: 8px;
             padding: 10px 0px;
-            margin-top: 38px;
+            margin-top: 28px;
             border: none;
             font-family: 'Fira Sans', sans-serif;
             font-size: 20pt;
@@ -209,7 +233,7 @@
             justify-content: center;
             align-items: center;
             width: 95%;
-            height: 5%;
+            height: 29px;
             margin-top: 9px;
         }
 
@@ -231,12 +255,35 @@
                 width: 100%;
             }
 
+            .fundo {
+                margin-top: 10%;
+            }
+
             .login-esp {
                 width: 78%;
             }
 
             .texto-fundo {
                 width: 54%;
+            }
+
+        }
+
+        @media screen and (max-width:1150px) {
+            .espaço {
+                width: 100%;
+            }
+
+            .fundo {
+                margin-top: 5%;
+            }
+
+            .login-esp {
+                width: 80%;
+            }
+
+            .texto-fundo {
+                width: 84%;
             }
 
         }
@@ -251,6 +298,10 @@
                 width: 94%;
             }
 
+            .fundo {
+                margin-top: 6%;
+            }
+
             .texto-fundo {
                 width: 84%;
             }
@@ -259,8 +310,13 @@
 
 
         @media screen and (max-width:600px) {
+
             .espaço {
                 width: 100%;
+            }
+
+            .fundo {
+                margin-top: 5%;
             }
 
             .login-esp {
@@ -277,56 +333,61 @@
 </head>
 
 <body>
-    <button class="voltar"><a href="/index.html"><img src="/img/botao-voltar.png" width="20px" alt="flecha2"></a></button>
+    <!-- Botão para voltar  -->
+    <button class="voltar"><a href="index.html"><img
+                src="https://i.pinimg.com/originals/6b/09/e4/6b09e4f2da4e56ebd039889fe44d2025.png" width="20px"
+                alt="flecha2"></a></button>
     <div class="espaço">
         <div class="login-esp">
             <div class="texto-fundo">
-                <div class="img">
-                    <a class="img" href="/index.html"><img src="/img/logo.png" width="160vw" alt="Logo"></a>
-                </div>
-                <form class="espaço-tex" action="/login" method="post">
-                    <label for="espaço-ususario">E-mail</label>
-                    <input type="text" name="username" id="username" placeholder="">
-                </div>
-                <div class="espaço-tex">
-                    <label for="espaço-senha">Senha</label>
-                    <input type="password" name="senha" id="password" placeholder="">
-                </div>
-
-                <div class="Op">
-                    <p class="esqueci-senha">Esqueci minha senha</p>
-                    <div>
-                        <input type="checkbox" name="conectado" class="flag" checked="checked">
-                        <label for="conectado" class="esqueci-senha">Mantenha-me conectado</label>
+                <div class="fundo">
+                    <!-- imagem -->
+                    <div class="img">
+                        <a class="img2" href="index.html"><img
+                                src="https://i.pinimg.com/originals/98/19/26/981926512458439c7a1dbdee00197103.png"
+                                width="305px" alt="Logo"></a>
                     </div>
-                </div>
-                <div class="desenho">
-                    <div class="bloquinho-direita"></div>
-                    <p>OU</p>
-                    <div class="bloquinho-esquerda"></div>
-                </div>
-
-                <div class="redes">
-                    <p class="small-letters">Entrar com:</p>
-                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/img/facebook.png"
-                            alt="" class="face" width="25px"></a>
-                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S705472775%3A1686921225504753&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img
-                            src="/img/google.png" alt="" class="g+" width="25px"></a>
-                    <a href=""><img src="/img/apple.png" alt="" class="apple" width="25px"></a>
-                </div>
-
-                <!-- <div class="termos_de_uso">
-                            
-                            <p class="02"><input type="checkbox" name="conectado" class="flag">  Ao fazer login, você concorda
-                                com a <a href="Pag.politica-de-priv.html" class="termos_link_link_uso">Política de Privacidade</a> e com os
-                                <a href="Pag.termo-de-uso.html" class="termos_link_link_uso">Termos de Uso</a> da Health box.</p></p>
-                            </div>                    -->
-                <button class="btn-login" type="submit">ENTRAR</button></form>
-
-                <div class="registro2">
-                    <p class="small-letters registro">NÂO ESTA REGISTRADO?
-                        <a href="cadastro.html" class="fazer_cadastro">FAZER CADASTRO!</a>
-                    </p>
+                    <!-- infomaçôes - texto -->
+                    <form class="formi" action="login" method="post">
+                        <div class="espaço-tex" action="/login" method="post">
+                            <label for="espaço-ususario">E-mail</label>
+                            <input type="text" name="username" id="username" placeholder="">
+                            <label for="espaço-senha">Senha</label>
+                            <input type="password" name="senha" id="password" placeholder="">
+                        </div>
+                        <div class="Op">
+                            <p class="esqueci-senha">Esqueci minha senha</p>
+                            <div>
+                                <input type="checkbox" name="conectado" class="flag" checked="checked">
+                                <label for="conectado" class="esqueci-senha">Mantenha-me conectado</label>
+                            </div>
+                        </div>
+                        <div class="desenho">
+                            <div class="bloquinho-direita"></div>
+                            <p>OU</p>
+                            <div class="bloquinho-esquerda"></div>
+                        </div>
+                        <div class="redes">
+                            <p class="small-letters">Entrar com:</p>
+                            <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
+                                    src="https://i.pinimg.com/originals/aa/12/cf/aa12cf05f3427d6c86f83f5704f35e58.png"
+                                    alt="" class="face" width="31px"></a>
+                            <a
+                                href="https://accounts.google.com/v3/signin/identifier?dsh=S705472775%3A1686921225504753&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img
+                                    src="https://i.pinimg.com/originals/db/ae/5f/dbae5f6d91954b5102f948d679db5df7.png"
+                                    alt="" class="g+" width="31px"></a>
+                            <a href=""><img
+                                    src="https://i.pinimg.com/originals/13/6d/8b/136d8b7d9bcae202c53cb2eb8ce55c65.png"
+                                    alt="" class="apple" width="31px"></a>
+                        </div>
+                        <!-- botão para entrar -->
+                        <button class="btn-login" type="submit">ENTRAR</button>
+                    </form>
+                    <div class="registro2">
+                        <p class="small-letters registro">NÂO ESTA REGISTRADO?
+                            <a href="cadastro.html" class="fazer_cadastro">FAZER CADASTRO!</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
